@@ -1,0 +1,16 @@
+{
+  "name": "practica_neo4j",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  "runServices": ["neo4j"],
+  "workspaceFolder": "/workspaces/practica_neo4j",
+  "shutdownAction": "stopCompose",
+  "forwardPorts": [7474, 7687],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "neo4j-extensions.neo4j-for-vscode"
+      ]
+    }
+  }
+}
